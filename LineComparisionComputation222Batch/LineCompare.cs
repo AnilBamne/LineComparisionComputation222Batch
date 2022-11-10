@@ -32,11 +32,15 @@ namespace LineComparisionComputation222Batch
             double LengthOfLine2 = Math.Sqrt(Math.Pow(m2 - m1, 2) + Math.Pow(n2 - n1, 2));
             Console.WriteLine("The length of line1 is : " + LengthOfLine1);
             Console.WriteLine("The length of line2 is : " + LengthOfLine2);
-            //UC2
-            if(LengthOfLine1.Equals(LengthOfLine2))
-                Console.WriteLine("Both lines are Equal");
-            else
-                Console.WriteLine("Lines are not equal");
+            ////UC2
+            //if(LengthOfLine1.Equals(LengthOfLine2))
+            //    Console.WriteLine("Both lines are Equal");
+            //else
+            //    Console.WriteLine("Lines are not equal");
+            //UC3
+            if (LengthOfLine1.CompareTo(LengthOfLine2) > 0) Console.WriteLine("Line1 Is Greater Than Line2");
+            else if (LengthOfLine2.CompareTo(LengthOfLine1) > 0) Console.WriteLine("Line2 Is Greater Than Line1");
+            else Console.WriteLine("Both Lines Are Equal");
         }
     }
 }
